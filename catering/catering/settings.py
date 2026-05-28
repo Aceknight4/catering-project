@@ -39,7 +39,9 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://catering-project-production-d1f0.up.railway.app',
+]
 
 # Application definition
 
@@ -138,3 +140,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # CORS — allow frontend to talk to API
 CORS_ALLOW_ALL_ORIGINS = True
+
+
