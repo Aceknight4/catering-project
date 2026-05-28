@@ -1,1 +1,1 @@
-web: gunicorn catering.wsgi --log-file -
+web: cd catering && gunicorn catering.wsgi --log-file -
